@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 
-
 UART_HandleTypeDef huart2;
 
 void SystemClock_Config(void);
@@ -21,10 +20,10 @@ int main(void)
 	{
 	  printf("HIGH\r\n");
 	  HAL_GPIO_WritePin(GPIOA,LED_Pin,1);
-	  HAL_Delay(100);
+	  HAL_Delay(1000);
 	  printf("LOW\r\n");
 	  HAL_GPIO_WritePin(GPIOA,LED_Pin,0);
-	  HAL_Delay(100);
+	  HAL_Delay(1000);
 	}
 }
   int _write(int file, char *ptr, int len) {
